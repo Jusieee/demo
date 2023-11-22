@@ -31,3 +31,4 @@ distances['Париж']['Москва'] = MosPar
 distances['Париж']['Лондон'] = LonPar
 
 pprint(distances)
+
