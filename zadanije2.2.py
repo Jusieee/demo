@@ -14,4 +14,7 @@ d1 = (((point[0])*2+(point[1])*2)**.5)
 
 pprint(radius > d1)
 
+point_2 = (30, 30)
+d2 = (((point_2[0])*2+(point_2[1])*2)**.5)
 
+pprint(radius > d2)
