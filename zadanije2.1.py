@@ -8,15 +8,15 @@ sites = {
     'Par': (480, 480),
 }
 
-distances = {}
+distances = dict()
 
 Moscow = sites['Mos']
 London = sites['Lon']
 Paris = sites['Par']
 
-MosLon = ((Moscow[0] - London[0])**2 + (Moscow[1] - London[1])**2)
-MosPar = ((Moscow[0] - Paris[0])**2 + (Moscow[1] - Paris[1])**2)
-LonPar = ((London[0] - Paris[0])**2 + (London[1] - Paris[1])**2)
+MosLon = ((Moscow[0] - London[0])**2 + (Moscow[1] - London[1])**2)**.5
+MosPar = ((Moscow[0] - Paris[0])**2 + (Moscow[1] - Paris[1])**2)**.5
+LonPar = ((London[0] - Paris[0])**2 + (London[1] - Paris[1])**2)**.5
 
 distances['Москва'] = {}
 distances['Москва']['Лондон'] = MosLon
