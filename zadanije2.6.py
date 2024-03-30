@@ -11,3 +11,7 @@ birds = ['rooster', 'ostrich', 'lark', ]
 zoo = zoo + birds
 
 print(zoo)
+
+zoo.remove('elephant')
+
+print(zoo)
