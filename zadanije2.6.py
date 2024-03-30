@@ -15,3 +15,6 @@ print(zoo)
 zoo.remove('elephant')
 
 print(zoo)
+
+print('Лев находится в клетке номер -', zoo.index('lion'))
+print('Жаворонок находится в клетке номер -', zoo.index('lark'))
