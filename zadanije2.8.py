@@ -15,3 +15,4 @@ secret_message[4] = secret_message[4][::-1]
 print(secret_message[0][3], secret_message[1][9:13], secret_message[2][5:15:2], secret_message[3][-13:-7],
       secret_message[4][-21:-16])
 
+
