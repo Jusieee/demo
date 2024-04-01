@@ -42,5 +42,30 @@ tables_price_1 = tables_item_1['price']
 tables_cost = tables_quantity * tables_price + tables_quantity_1 * tables_price_1
 tables_quantity = tables_quantity + tables_quantity_1
 
+sofa_code = goods['Диван']
+sofa_item = store[sofa_code][0]
+sofa_item_1 = store[sofa_code][1]
+sofa_quantity = sofa_item['quantity']
+sofa_quantity_1 = sofa_item_1['quantity']
+sofa_price = sofa_item['price']
+sofa_price_1 = sofa_item_1['price']
+sofa_cost = sofa_quantity * sofa_price + sofa_quantity_1 * sofa_price_1
+sofa_quantity = sofa_quantity + sofa_quantity_1
+
+chair_code = goods['Стул']
+chairs_item = store[chair_code][0]
+chairs_item_1 = store[chair_code][1]
+chairs_item_2 = store[chair_code][2]
+chairs_quantity = chairs_item['quantity']
+chairs_quantity_1 = chairs_item_1['quantity']
+chairs_quantity_2 = chairs_item_2['quantity']
+chairs_price = chairs_item['price']
+chairs_price_1 = chairs_item_1['price']
+chairs_price_2 = chairs_item_2['price']
+chairs_cost = chairs_quantity * chairs_price + chairs_quantity_1 * chairs_price_1 + chairs_quantity_2 * chairs_price_2
+chairs_quantity = chairs_quantity + chairs_quantity_1 + chairs_quantity_2
+
 print('Лампа -', lamps_quantity, 'шт, стоимость', lamps_cost, 'руб',
-      'Стол -', tables_quantity, 'шт, стоимость', tables_cost, 'руб')
+      'Стол -', tables_quantity, 'шт, стоимость', tables_cost, 'руб',
+      'Диван -', sofa_quantity, 'шт, стоимость', sofa_cost, 'руб',
+      'Стул -', chairs_quantity, 'шт, стоимость', chairs_cost, 'руб')
