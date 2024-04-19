@@ -21,4 +21,9 @@ for x in range(50, 510, 50):
     point = sd.get_point(x, 500)
     bubble(point=point, step=5)
 
+for x in range(40, 401, 40):
+    for y in range(40, 120, 30):
+        point = sd.get_point(x, y)
+        bubble(point=point, step=10)
+
 sd.pause()
