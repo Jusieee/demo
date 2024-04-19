@@ -26,4 +26,8 @@ for x in range(40, 401, 40):
         point = sd.get_point(x, y)
         bubble(point=point, step=10)
 
+for _ in range(100):
+    point = sd.random_point()
+    bubble(point=point, step=100)
+
 sd.pause()
