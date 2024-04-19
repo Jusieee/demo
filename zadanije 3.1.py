@@ -17,4 +17,8 @@ def bubble(point, step):
 point = sd.get_point(500, 500)
 bubble(point=point, step=20)
 
+for x in range(50, 510, 50):
+    point = sd.get_point(x, 500)
+    bubble(point=point, step=5)
+
 sd.pause()
